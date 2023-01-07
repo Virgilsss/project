@@ -5,20 +5,77 @@
 
 }
 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .text {
+    width: 100%;
+  }
+  
+  @media (min-width: 600px) {
+    .text {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .text {
+      width: 25%;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+
 body{
-    background: #fcfc ;
+    background: rgba(110, 110, 110, 0.8) ;
+    
 }
 
-header{
-    display: flex;
+.header{
+    font-family: monospace;
+   
+   
+    flex-wrap: wrap;
+    
+    
 
+}
+
+
+
+.nav-bar
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+     padding-top: 15px;
+    background: rgb(94, 89, 92);
 }
 
 
 
 
 .logo{
-    display: flex;
+
+    font-size: 48px;
+    font-weight: 900;
+    color: rgba(235, 235, 235, 0.651);
+    /*background: tan;*/
+    padding: 4px 32px;
+    
+    /*border: 7px solid rgb(207, 13, 13);*/
+    
+    /*display: flex;
     flex: 1 1 auto;
     background-color: bisque;
     justify-content: center;
@@ -27,8 +84,27 @@ header{
     border-radius: 8px;
     
     padding: 8px 24px;
-    margin: 10px;
+    margin: 10px;*/
     
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    /*flex-direction: row;*/
+    list-style-type: none;
+}
+
+
+
+a{
+    font-size: 22px;
+    /*background: white;*/
+    flex-direction: row;
+    
+    padding: 8px;
+    text-decoration: none;
 }
 
 footer{
@@ -36,7 +112,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
+    background: rgb(0, 0, 0);
     height: auto;
     width: 100vw;
     font-family: "open Sans";
@@ -96,7 +172,7 @@ footer{
 }  
 
 .footer-bottom{
-    background: #000;
+    background: rgb(0, 0, 0);
     width: 100vw;
     padding: 20px 0;
     text-align: center;
